@@ -1,5 +1,9 @@
 # x402 流程教學：從 HTTP 402 到 AI Agent 付款
 
+[![x402 v2](https://img.shields.io/badge/x402-v2-167c61)](https://docs.x402.org/)
+![Demo](https://img.shields.io/badge/Demo-167c61)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+
 本專案以航班查詢 API 為範例，透過實際的 HTTP 請求，逐步展示 **查詢 → 付款條件 → Client 授權 → 驗證與結算 → 資料交付** 的完整流程。網站會依序呈現各階段的實際 Payload，README 則進一步介紹 x402 協定角色、AI Agent 付款架構及相關延伸學習資源。
 
 專案預設使用 Demo 模式，無須連接錢包或發送鏈上交易，也可切換至 Base Sepolia 測試網進行實際結算。航班資訊採用固定測試資料，僅供流程展示，不提供訂位功能。
@@ -254,3 +258,7 @@ node scripts/terminal-demo.mjs --plain
 brew install vhs
 npm run docs:record
 ```
+
+## 授權
+
+本專案採用 [MIT License](LICENSE)。
