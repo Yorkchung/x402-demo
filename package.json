@@ -1,0 +1,27 @@
+{
+  "name": "x402-flow-demo",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "next dev --hostname 127.0.0.1",
+    "dev:resource": "node --env-file-if-exists=.env.local services/resource.mjs",
+    "build": "next build --webpack",
+    "start": "node scripts/dev.mjs --production",
+    "test": "node --test tests/*.test.mjs",
+    "demo:terminal": "node scripts/terminal-demo.mjs",
+    "docs:record": "vhs docs/terminal-demo.tape"
+  },
+  "dependencies": {
+    "@x402/core": "^2.28.0",
+    "@x402/evm": "^2.28.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "viem": "^2.57.4"
+  },
+  "engines": {
+    "node": ">=22.9"
+  }
+}
